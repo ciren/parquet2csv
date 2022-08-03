@@ -1,2 +1,10 @@
+.bloop
+.bsp
+.metals
+.direnv
+
 *.class
 *.log
+
+/target
+/project
