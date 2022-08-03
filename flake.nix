@@ -9,7 +9,7 @@
       with import nixpkgs { system = "${system}"; };
       let
         buildInputs =  [
-            sbt
+            (sbt.override { jre = openjdk11; })
           ];
       in
       {

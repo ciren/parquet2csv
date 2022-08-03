@@ -22,10 +22,12 @@ inThisBuild(
   )
 )
 
-scalaVersion := "2.12.16"
+scalaVersion := "2.13.8"
 
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-sql" % "3.0.1",
-  "org.apache.spark" %% "spark-core" % "3.0.1",
+  "org.apache.spark" %% "spark-sql" % "3.3.0",
+  "org.apache.spark" %% "spark-core" % "3.3.0",
   "dev.zio" %% "zio-cli" % "0.2.7"
 )
+
+run / fork := true
